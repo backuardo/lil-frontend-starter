@@ -1,3 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './components/App';
+
 import './style.scss';
 
-console.log('starting up');
+ReactDOM.render(<App />, document.getElementById('main'));
