@@ -1,5 +1,6 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const env = process.env.NODE_ENV || 'development';
 
@@ -34,6 +35,13 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [autoprefixer()],
               sourceMap: true,
             },
           },

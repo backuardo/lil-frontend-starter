@@ -6,11 +6,16 @@
   "author": "ben <benjamin.eisner.20@dartmouth.edu>",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server"
+    "start": "NODE_ENV=development webpack-dev-server",
+    "test": "eslint src/**.js",
+    "build": "yarn clean; NODE_ENV=production webpack --colors",
+    "clean": "rimraf dist",
+    "deploy": "yarn build; surge -p dist -d beneisnr-frontend-starter-kit.surge.sh; yarn clean"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
@@ -25,8 +30,10 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^1.0.0",
+    "surge": "^0.21.3",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
