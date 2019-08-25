@@ -1,0 +1,16 @@
+{
+  "name": "frontend-starter-kit",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/beneisnr/frontend-starter-kit.git",
+  "author": "ben <benjamin.eisner.20@dartmouth.edu>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
