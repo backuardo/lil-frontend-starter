@@ -3,7 +3,10 @@ import { connect } from 'react-redux';
 
 function Counter({ count }) {
   return (
-    <div>{`Count: ${count}`}</div>
+    <div>
+      <b>{count}</b>
+      {` ${count !== 1 ? 'likes' : 'like'}`}
+    </div>
   );
 }
 
