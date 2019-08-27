@@ -10,6 +10,7 @@ const finalCSSLoader = (env === 'production')
 
 module.exports = {
   mode: env,
+  output: { publicPath: '/' },
   entry: [
     'babel-polyfill', // fills new js features before our app
     './src',
@@ -17,6 +18,7 @@ module.exports = {
   devtool: 'source-map', // enables debugging with source in devtools
   devServer: {
     hot: true, // enables hot reloading
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -71,6 +73,10 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: './index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/200.html',
       filename: './index.html',
     }),
   ],

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Controls, Counter } from '../containers';
+import Controls from '../containers/Controls';
+import Counter from '../containers/Counter';
 
 function SampleCard() {
   return (
