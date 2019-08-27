@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "repository": "https://github.com/beneisnr/frontend-starter-kit.git",
-  "author": "ben <benjamin.eisner.20@dartmouth.edu>",
+  "author": "Ben Eisner",
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
