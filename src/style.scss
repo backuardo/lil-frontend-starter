@@ -1,11 +1,12 @@
-$black: rgba(22, 22, 72, 1);
-$white: rgba(255, 255, 255, 1);
-$white-shadow: rgba(240, 240, 250, 0.8);
+$dark: rgba(22, 22, 72, 1);
+$dark-shadow: rgba(22, 22, 72, 0.2);
+$light: rgba(255, 255, 255, 1);
+$light-shadow: rgba(240, 240, 250, 0.8);
 
 body, html {
-  background-color: $white;
-  color: $black;
-  font-family: 'Montserrat', sans-serif;
+  background-color: $light;
+  color: $dark;
+  font-family: 'Prompt', sans-serif;
 }
 
 #app {
@@ -16,25 +17,42 @@ body, html {
   justify-content: center;
 }
 
-.sample-card {
+#home-container {
   align-items: center;
-  border-radius: 24px;
-  box-shadow: 0px 0px 20px 24px $white-shadow;
+  background-color: $light-shadow;
+  box-shadow: 0px 0px 10px 2px $dark-shadow;
   display: flex;
+  font-weight: 100;
+  color: rgba($dark, 0.7);
   flex-direction: column;
   justify-content: center;
   padding: 18px;
-  min-width: 300px;
+  width: 300px;
+  height: 400px;
+  min-height: 300px;
 
   h1 {
+    color: rbga($dark, 0.9);
     font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  b{
+    font-weight: 400;
   }
 
   button {
+    background-color: inherit;
     border: none;
 
     i {
       font-size: 18px;
+      color: rgba($dark, 0.5);
+
+      &:hover {
+        color: rgba($dark, 0.7);
+      }
     }
 
     &:hover {
