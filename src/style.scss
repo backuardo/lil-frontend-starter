@@ -45,6 +45,10 @@ body, html {
   flex-direction: column;
   z-index: 1;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   .egg-eyes {
     display: flex;
 
