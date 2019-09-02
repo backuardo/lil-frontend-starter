@@ -97,22 +97,24 @@ body, html {
 }
 
 .count {
-  font-size: 96px;
+  font-size: 48px;
   z-index: 0;
   display: flex;
+  align-content: space-between;
   color: rgba($dark, 0.2);
 }
 
 .controls {
   z-index: 1;
   margin-bottom: 20px;
+  display: flex;
 
   button {
     background-color: inherit;
     border: none;
   
     i {
-      font-size: 48px;
+      font-size: 24px;
       color: rgba($light, 0.7);
   
       &:hover {
