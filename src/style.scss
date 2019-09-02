@@ -30,7 +30,7 @@ body, html {
   width: 100vw;
   background-image: radial-gradient(#FEAC5E, #C779D0, #4BC0C8);
   background-repeat: repeat;
-	background-size: 400% 400%;
+	background-size: 1000% 1000%;
 }
 
 .egg {
@@ -66,8 +66,8 @@ body, html {
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         background-color: darken($dark, 100%);
         display: flex;
