@@ -1,3 +1,3 @@
-# frontend-starter-kit
+# :egg: frontend-starter
 
-[Demo](https://beneisnr-frontend-starter-kit.surge.sh/)
+* [Demo deployment](https://beneisnr-frontend-starter-kit.surge.sh/)
