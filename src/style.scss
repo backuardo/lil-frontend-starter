@@ -1,16 +1,14 @@
 $dark: rgba(20, 20, 20, 1);
 $dark-shadow: rgba($dark, 0.6);
 $light: rgba(255, 255, 255, 1);
-$pink: rgba(192, 134, 126, 0.9);
+$pink: rgba(192, 134, 126, 0.6);
 $egg: rgba(250, 236, 246, 1);
 
 body, html {
   background-color: $light;
   color: $dark;
   font-family: 'Prompt', sans-serif;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  #FEAC5E, #C779D0, #4BC0C8);
-	background-size: 400% 400%;
-  animation: background-shift 10s ease infinite;
+  margin: 0;
   height: 100vh;
 }
 
@@ -29,6 +27,10 @@ body, html {
   justify-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(#FEAC5E, #C779D0, #4BC0C8);
+  background-repeat: repeat;
+	background-size: 400% 400%;
 }
 
 .egg {
@@ -50,6 +52,7 @@ body, html {
       margin: 0 14px 70px 14px;
       justify-content: center;
       border-radius: 50% / 63% 60% 37% 37%;
+      border-bottom: 1px solid rgba($dark, 0.8);
       background-color: $light;
       overflow: hidden;
       display: flex;
@@ -70,7 +73,7 @@ body, html {
         display: flex;
         animation: peek 8s normal infinite;
         box-shadow: inset 0 0 6px 2px $light;
-        animation-delay: 1s;
+        animation-delay: 2s;
   
         .egg-eye-iris-sparkle {
           background-color: $light;
@@ -93,68 +96,6 @@ body, html {
     margin-bottom: 48px;
     border-radius: 50%;
     box-shadow: inset 0 0 10px 1px rgba($dark, 0.1), 0 0 5px 1px rgba($dark, 0.2);
-  }
-}
-
-.count {
-  font-size: 48px;
-  z-index: 0;
-  display: flex;
-  align-content: space-between;
-  color: rgba($dark, 0.2);
-}
-
-.controls {
-  z-index: 1;
-  margin-bottom: 20px;
-  display: flex;
-
-  button {
-    background-color: inherit;
-    border: none;
-  
-    i {
-      font-size: 24px;
-      color: rgba($light, 0.7);
-  
-      &:hover {
-        color: $light;
-      }
-    }
-  
-    &:hover {
-      cursor: pointer;
-    }
-  
-    &:hover, &:focus {
-      outline: none;
-    }
-  }
-}
-
-@keyframes background-shift {
-	0%, 100% {
-    background-position: 30% 0%;
-  }
-
-  5%, 95% {
-    background-position: 60% 20%;
-  }
-
-  10%, 90% {
-    background-position: 70% 50%;
-  }
-
-  20%, 80% {
-    background-position: 40% 90%;
-  }
-
-  30%, 70% {
-    background-position: 80% 50%;
-  }
-
-  50% {
-    background-position: 90% 90%;
   }
 }
 
