@@ -5,12 +5,12 @@ import { increment, decrement } from '../state/actions';
 
 function Controls(props) {
   return (
-    <div>
+    <div className="controls">
       <button type="button" onClick={props.increment}>
-        <i className="far fa-thumbs-up" />
+        <i className="far fa-hand-point-up" />
       </button>
       <button type="button" onClick={props.decrement}>
-        <i className="far fa-thumbs-down" />
+        <i className="far fa-hand-point-down" />
       </button>
     </div>
   );
