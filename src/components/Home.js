@@ -5,8 +5,8 @@ import EggHead from './EggHead';
 
 function Home() {
   const { mouseXPosition, mouseYPosition } = useMousePosition();
-  const backgroundPositionX = mouseXPosition;
-  const backgroundPositionY = mouseYPosition;
+  const backgroundPositionX = mouseXPosition * 0.1;
+  const backgroundPositionY = mouseYPosition * 0.1;
   return (
     <div id="home-container" style={{ backgroundPosition: `${backgroundPositionX}% ${backgroundPositionY}%` }}>
       <EggHead />
