@@ -1,6 +1,7 @@
 $dark: rgba(20, 20, 20, 1);
 $dark-shadow: rgba($dark, 0.6);
 $light: rgba(255, 255, 255, 1);
+$light-shadow: rgba($light, 0.4);
 $pink: rgba(192, 134, 126, 0.5);
 $egg: rgba(250, 236, 246, 1);
 
@@ -30,7 +31,7 @@ body, html {
   width: 100vw;
   background-image: radial-gradient(#FEAC5E, #C779D0, #4BC0C8);
   background-repeat: repeat;
-	background-size: 1000% 1000%;
+  background-size: 1000% 1000%;
 }
 
 .egg {
@@ -43,10 +44,10 @@ body, html {
   background-color: $egg;
   display: flex;
   flex-direction: column;
-  z-index: 1;
 
   &:hover {
     cursor: pointer;
+    box-shadow: inset -10px 16px 60px 2px $dark, 0px 0px 40px 1px $light-shadow;
   }
 
   .egg-eyes {
