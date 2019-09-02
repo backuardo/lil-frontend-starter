@@ -1,7 +1,7 @@
 $dark: rgba(20, 20, 20, 1);
 $dark-shadow: rgba($dark, 0.6);
 $light: rgba(255, 255, 255, 1);
-$pink: rgba(192, 134, 126, 0.6);
+$pink: rgba(192, 134, 126, 0.5);
 $egg: rgba(250, 236, 246, 1);
 
 body, html {
@@ -58,7 +58,7 @@ body, html {
       display: flex;
       width: 95px;
       height: 65px;
-      box-shadow: 0px 8px 10px 4px desaturate(rgba($dark, 0.2), 30%), 0 2px 5px 1px rgba(darken($dark, 25%), 0.8), inset 0px -4px 12px 7px $pink, inset 0px -3px 5px 3px darken($pink, 50%);
+      box-shadow: 0px 8px 20px 4px desaturate(rgba($dark, 0.5), 30%), 0 2px 5px 1px rgba(darken($dark, 20%), 0.8), inset 0px -4px 12px 7px $pink, inset 0px -3px 5px 3px darken($pink, 50%);
       animation: blink 8s ease normal infinite;
   
       .egg-eye-iris {
@@ -66,8 +66,8 @@ body, html {
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
-        height: 40px;
-        width: 40px;
+        height: 38px;
+        width: 38px;
         border-radius: 50%;
         background-color: darken($dark, 100%);
         display: flex;
