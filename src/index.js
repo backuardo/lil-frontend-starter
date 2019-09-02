@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 
 import reducers from './state/reducers';
 
-import App from './unconnected-components/App';
+import App from './components/App';
 
 const store = createStore(reducers, {}, compose(
   applyMiddleware(),
