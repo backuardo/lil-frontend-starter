@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 function Counter({ count }) {
   return (
     <div>
+      Count:
+      {' '}
       <b>{count}</b>
-      {` ${count !== 1 ? 'likes' : 'like'}`}
     </div>
   );
 }
