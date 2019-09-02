@@ -1,8 +1,11 @@
 import React from 'react';
 
+import Counter from '../connected-components/Counter';
+
 function EggHead() {
   return (
     <div className="egg">
+      <Counter />
       <div className="egg-eyes">
         <div className="egg-eye">
           <div className="egg-eye-iris">
