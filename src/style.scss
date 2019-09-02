@@ -2,14 +2,14 @@ $dark: rgba(20, 20, 20, 1);
 $dark-shadow: rgba($dark, 0.6);
 $light: rgba(255, 255, 255, 1);
 $pink: rgba(192, 134, 126, 0.9);
-$green: rgba(250, 236, 246, 1);
+$egg: rgba(250, 236, 246, 1);
 
 body, html {
   background-color: $light;
   color: $dark;
   font-family: 'Prompt', sans-serif;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  #FEAC5E, #C779D0, #4BC0C8);
-	background-size: 200% 400%;
+	background-size: 400% 400%;
   animation: background-shift 10s ease infinite;
   height: 100vh;
 }
@@ -27,10 +27,8 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-
-  h1 {
-    font-size: 54px;
-  }
+  justify-content: center;
+  height: 100vh;
 }
 
 .egg {
@@ -40,9 +38,10 @@ body, html {
   border-radius: 50% / 60% 60% 37% 37%;
   height: 400px;
   width: 300px;
-  background-color: $green;
+  background-color: $egg;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 
   .egg-eyes {
     display: flex;
@@ -97,15 +96,23 @@ body, html {
   }
 }
 
+.count {
+  font-size: 96px;
+  z-index: 0;
+  display: flex;
+  color: rgba($dark, 0.2);
+}
+
 .controls {
-  margin-top: 24px;
+  z-index: 1;
+  margin-bottom: 20px;
 
   button {
     background-color: inherit;
     border: none;
   
     i {
-      font-size: 18px;
+      font-size: 48px;
       color: rgba($dark, 0.5);
   
       &:hover {

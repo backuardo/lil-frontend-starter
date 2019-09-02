@@ -3,11 +3,7 @@ import { connect } from 'react-redux';
 
 function Counter({ count }) {
   return (
-    <div>
-      Count:
-      {' '}
-      <b>{count}</b>
-    </div>
+    <div className="count">{count}</div>
   );
 }
 
