@@ -11,7 +11,7 @@
 
 ## getting started
 
- 1. `git clone https://github.com/beneisnr/lil-frontend-starter.git && cd frontend-starter`
+ 1. `git clone https://github.com/beneisnr/lil-frontend-starter.git && cd lil-frontend-starter`
  2. `yarn && yarn start`
 
 ## deployment
