@@ -17,5 +17,5 @@
 
 ## deployment
  1. run `npm  install  --global  surge`
- 2. navigate to `package.json` and update the url in the `deploy` key of `scripts` (line ~13)
+ 2. navigate to `package.json` and update the url in the `deploy` key of the `scripts` object (should be line ~13)
  3. run `yarn deploy`
