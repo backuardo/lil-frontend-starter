@@ -1,6 +1,5 @@
-#  [:egg: lil' frontend starter](https://beneisnr-frontend-starter-kit.surge.sh/)
+#  [:egg: lil' frontend starter](https://lil-frontend-starter.surge.sh/)
 ## summary
-Lightweight frontend starter pack with:
  - `babel`
  - `eslint`
  - `react`
@@ -8,6 +7,7 @@ Lightweight frontend starter pack with:
  - `redux` (example on the way)
  - `redux-thunk` (example on the way)
  - `sass`
+ - a few more
 
 ## getting started
 
