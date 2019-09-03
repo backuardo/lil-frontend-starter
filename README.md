@@ -1,4 +1,5 @@
 #  [:egg: lil' frontend starter](https://lil-frontend-starter.surge.sh/)
+![egg](demo.gif)
 ## summary
  - `babel`
  - `eslint`
